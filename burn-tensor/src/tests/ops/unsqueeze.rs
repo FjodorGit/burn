@@ -33,7 +33,7 @@ mod tests {
     /// Test that the function can't unsqueeze into a lower dimension
     #[test]
     #[should_panic]
-    fn should_not_alter_5d_to_3d() {
+    fn should_panic_5d_to_3d() {
         let tensor = Tensor::<TestBackend, 5>::ones(Shape::new([1, 2, 3, 4, 5]));
         let unsqueezed_tensor: Tensor<TestBackend, 3> = tensor.unsqueeze();
     }

@@ -73,6 +73,7 @@ macro_rules! testgen_all {
         burn_tensor::testgen_tanh!();
         burn_tensor::testgen_transpose!();
         burn_tensor::testgen_unsqueeze!();
+        burn_tensor::testgen_unsqueeze_dim!();
 
         // test stats
         burn_tensor::testgen_var!();

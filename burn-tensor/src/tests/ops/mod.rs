@@ -40,3 +40,4 @@ mod sub;
 mod tanh;
 mod transpose;
 mod unsqueeze;
+mod unsqueeze_dim;
